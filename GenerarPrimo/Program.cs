@@ -14,22 +14,31 @@ namespace GenerarPrimo
             int desde = Convert.ToInt32(Console.ReadLine());
             int hasta = Convert.ToInt32(Console.ReadLine());
 
-            for (int n = desde; n <= hasta; n++) 
+            for (int n = desde; n <= hasta; n++)
             {
                 Console.WriteLine("ingrese el numero");
 
                 int numero = Convert.ToInt32(Console.ReadLine());
-                
+
                 #region contar divisibilidades
 
                 int divisibilidades = 0;
-                for (int n = 1; n<= numero; n++) 
+                for (int m = 1; m <= numero; m ++) 
                 {
-                    if (numero % n == 0)
+                    if (numero % m == 0)
                     {
                         divisibilidades++;
                     }
                 }
+                if (divisibilidades <= 2)
+                {
+                    Console.WriteLine("Es número primo");
+                }
+                else
+                {
+                    Console.WriteLine("No es número primo");
+                }
+                #endregion
             }
         }
     }

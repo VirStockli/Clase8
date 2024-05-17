@@ -12,11 +12,11 @@ namespace VerificarPrimo
         {
                     
             Console.WriteLine("Ingrese un numero");
-            string varText = Console.RedLine(); 
+            string varText = Console.ReadLine(); 
             int numero = Convert.ToInt32(varText);
             /* int numero = Conver.ToInt32(Console.ReadLine())*/
 
-            int dividibikidades = 0;
+            int divisibilidades = 0;
 
             for (int n = 1;n <= numero; n++)
             { 
@@ -27,11 +27,11 @@ namespace VerificarPrimo
             }
             if (divisibilidades <= 2)
             {
-                Console.WriteLine("Es número primo")
+                Console.WriteLine("Es número primo");
             }
             else
             {
-                Console.WriteLine("No es número primo")
+                Console.WriteLine("No es número primo");
             }
         }
     }
